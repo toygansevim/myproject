@@ -1,3 +1,4 @@
+<?php
 
 /**
  * Created by PhpStorm.
@@ -7,6 +8,24 @@
  */
 
 
-<h1>Toygan<h1>
+//require the autoload file
+require_once ('vendor/autoload.php');
 
-<p>Toygan is awesome</p>
+//create an instance of the base class
+$f3 = Base::instance();
+
+//define a default rote
+$f3->route('GET /', function (){
+
+    $view = new View;
+    echo $view->render('views/home.html');
+
+});
+
+
+//run fat free
+$f3->run();
+
+echo "<h1>Toygan Sevim</h1>";
+
+echo "<p>We are learning all about github</p>";
