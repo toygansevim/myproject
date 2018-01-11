@@ -1,4 +1,4 @@
-<?php
+
 /**
  * Created by PhpStorm.
  * User: toygan
@@ -6,4 +6,6 @@
  * Time: 1:32 PM
  */
 
-echo "<Toygan</h1>";
+
+<h1>Toygan<h1>
+
